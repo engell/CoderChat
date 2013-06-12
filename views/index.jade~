@@ -2,19 +2,28 @@ doctype 5
 html
 	head
 		script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
-		title= chat
-		link(rel='stylesheet', href='/stylesheets/style.css')
 		script(type='text/javascript', src='/javascripts/chat.js')
+		script(type='text/javascript', src='/javascripts/bootstrap.js')
+		script(type='text/javascript', src='/javascripts/bootstrap.min.js')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
+		title= chat
 	body
-		h1 Welcome ChatNode
-		#all
-			ul#log
-			#users this is a list of users
-			#alert Identificate:<br />
-				input#nick(type='text')
-				button#buttonUser Enviar
-			#yo
-			#send
-				input#message(type='text')
-				button#buttonSend Enviar
+		#all.container-fluid
+			h1 Welcome ChatNode
+			#full.row-fluid
+				ul#log.span9(style='height: 200px; overflow-y: scroll;')
+				#users.span3(style='height: 100px; overflow-y: scroll;') En linea:
+				br
+				#alert.span9 Identificate:
+					br
+					input#nick.5(type='text')
+					button#buttonUser Enviar
+				#yo.span9
+				#send.span9
+					input.span9#message(type='text')
+					button#buttonSend Enviar
 

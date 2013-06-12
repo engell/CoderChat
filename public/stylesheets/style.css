@@ -1,10 +1,25 @@
 body {
+	 background-color: #D8D8D8;
+}
+
+#all {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background-color: #D8D8D8;
 }
 
 ul#log {
 	list-style: none;
+	background-color: #BDBDBD;
+  border-radius: 5px;
+	marging: 5px;
+   border-radius: 5px;
+}
+
+#users {
+	background-color: #BDBDBD;	
+  border-radius: 5px;
+	marging: 5px;
+   border-radius: 5px;
 }
 
 #send {

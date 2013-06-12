@@ -24,6 +24,7 @@ $(function() {
       $("#yo").append(nick);
       $("#yo").slideToggle();
       $("#send").slideToggle();
+	    $("#users").append("<li>" + nick + "</li>");
     }
   });
   $("#buttonSend").on("click", function() {
