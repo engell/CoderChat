@@ -8,8 +8,9 @@ html
 	body
 		h1 Welcome ChatNode
 		#all
-			#log this is a log
+			ul#log
 			#users this is a list of users
+			#alert Identificate:
 			input#nick(type='text')
 			br
 			input#message(type='text')

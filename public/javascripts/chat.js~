@@ -1,12 +1,22 @@
 $(function() {
-	var user;
-  user = escape($("#user").val());
+   var message, nick;
+    nick = null;
+    if (nick === null) {
+      $("#alert").css({color: "red"});
+    } 
   return $("#button").on("click", (function() {
-    var message;
+    nick = escape($("#nick").val());
+		$("#nick").hide();
+		$("#yo").toggle();
+		if (nick != null) {
+			$("#alert").css({color: "white"});
+    }
     message = escape($("#message").val());
-		if (message.indexOf("%3") !== -1) {
-			alert("No HTML");
-			return false; }
-    return $("#log").append("<li>" + user + ": " + message + "</li>");
+    if (message.indexOf("%3") !== -1) {
+      alert("No HTML");
+      return false;
+    }
+    return $("#log").append("<li>" + nick + ": " + message + "</li>");
   }));
 });
+

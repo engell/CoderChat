@@ -7,6 +7,10 @@ ul#log {
 	list-style: none;
 }
 
+#yo {
+	display: none;
+}
+
 a {
   color: #00B7FF;
 }
