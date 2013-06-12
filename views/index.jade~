@@ -10,9 +10,11 @@ html
 		#all
 			ul#log
 			#users this is a list of users
-			#alert Identificate:
-			input#nick(type='text')
-			br
-			input#message(type='text')
-			button#button Enviar
+			#alert Identificate:<br />
+				input#nick(type='text')
+				button#buttonUser Enviar
+			#yo
+			#send
+				input#message(type='text')
+				button#buttonSend Enviar
 
