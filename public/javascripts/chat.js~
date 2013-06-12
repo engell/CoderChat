@@ -1,0 +1,12 @@
+$(function() {
+	var user;
+  user = escape($("#user").val());
+  return $("#button").on("click", (function() {
+    var message;
+    message = escape($("#message").val());
+		if (message.indexOf("%3") !== -1) {
+			alert("No HTML");
+			return false; }
+    return $("#log").append("<li>" + user + ": " + message + "</li>");
+  }));
+});

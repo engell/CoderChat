@@ -4,7 +4,7 @@ body {
 }
 
 ul#log {
-	list-style: none;
+	list-style=none;
 }
 
 a {

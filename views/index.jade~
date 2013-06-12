@@ -8,7 +8,7 @@ html
 	body
 		h1 Welcome ChatNode
 		#all
-			ul#log
+			#log this is a log
 			#users this is a list of users
 			input#nick(type='text')
 			br
