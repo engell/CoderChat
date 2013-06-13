@@ -9,27 +9,40 @@ $(function() {
       color: "red"
     });
   }
-  $("#buttonUser").on("click", function() {
-    nick = escape($("#nick").val());
-    if (nick.indexOf("%3") !== -1) {
+//Inicia función de enviar Nick	
+	var sendNick = function() {
+		nick = $("#nick").val();
+    if (nick.indexOf("<") !== -1) {
       alert("No HTML");
       return false;
     }
-    if (nick === "") {
-      alert("Ingresa nombre de usuario");
-      return false;
-    } else {
-      $("#alert").hide();
-      $("#nick").hide();
-      $("#yo").append(nick);
-      $("#yo").slideToggle();
-      $("#send").slideToggle();
-	    $("#users").append("<li>" + nick + "</li>");
-    }
+   	 if (nick === "") {
+   	   alert("Ingresa nombre de usuario");
+   	   return false;
+   	 } else {
+   	   $("#buttonUser").hide();
+			 $("#alert").hide();
+   	   $("#nick").on("focus", function() { $(this).blur(); });
+   	   $("#send").slideToggle();
+	 	   $("#users").append("<li>" + nick + "</li>");
+			 $("#message").focus();
+   	 }
+		}
+//Presiónas botón o enter
+  $("#buttonUser").on("click", function(e) {
+    sendNick();
   });
-  $("#buttonSend").on("click", function() {
-    message = escape($("#message").val());
-    if (message.indexOf("%3") !== -1) {
+  $("#nick").on("keypress", function(e) {
+  	if(e.keyCode==13){
+  		sendNick();
+  	}
+  });
+//Termina Función de enviar Nick.
+
+//Inicia Función de enviar Mensaje.
+	var sendMessage = function() {
+		message = $("#message").val();
+    if (message.indexOf("<") !== -1) {
       alert("No HTML");
       return false;
     }
@@ -37,9 +50,25 @@ $(function() {
       alert("Escribe algo");
       return false;
     } else {
-    $("#log").append("<li>" + nick + ": " + message + "</li>");
-    $("#message").val("");
+    $("#log").append("<li>" + "<b><font size=+1>" + nick + "</font></b>" + ": " + message + "</li>");
+    $("#message").val('');
+	  $("#message").focus();
 		}
+	}
+//Presiónas botón o enter
+  $("#buttonSend").on("click", function(e) {
+  	sendMessage();
   });
+  $("#message").on("keypress", function(e) {
+  	if(e.keyCode==13){
+  		sendMessage();
+  	}
+  });
+//Termina Función de enviar Mensaje.
+    
+  
 });
 
+$(document).ready(function() {
+	$("#nick").focus();
+});

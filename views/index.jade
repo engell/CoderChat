@@ -12,18 +12,27 @@ html
 		link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
 		title= chat
 	body
-		#all.container-fluid
-			h1 Welcome ChatNode
-			#full.row-fluid
-				ul#log.span9(style='height: 200px; overflow-y: scroll;')
-				#users.span3(style='height: 150px; overflow-y: scroll;') En linea:
-				br
-				#alert.span9 Identificate:
-					br
-					input#nick.5(type='text')
-					button#buttonUser Enviar
-				#yo.span9
-				#send.span9
-					input.span9#message(type='text')
-					button#buttonSend Enviar
+		#all.container
+			h1 Welcome to ChatNode
+			#full.row
+				#boxes.row-fluid
+					ul#log.span9(style='height: 200px; overflow-y: scroll;')
+					#users.span3(style='height: 150px; overflow-y: scroll;') En linea:
+					#adds.pan3 
+						h4 <center>Adsense!</center>
+				#fields.row-fluid
+					#contends.span9
+						#alert.span9 
+							h3 Identif&iacute;cate:
+						#userField.span9
+							input#nick.5(type='text')
+							button#buttonUser.btn Enviar
+						#send.span9
+							input.span9#message(type='text') 
+							button#buttonSend.btn Enviar
+					#buttons.span3
+						button#pastebin.btn Pastebin...
+						br
+						br
+						button#file.btn File...
 
