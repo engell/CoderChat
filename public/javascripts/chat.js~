@@ -8,7 +8,6 @@ $(function() {
     $("#alert").css({
       color: "red"
     });
-  }
 //Inicia función de enviar Nick	
 	var sendNick = function() {
 		nick = $("#nick").val();
@@ -50,11 +49,13 @@ $(function() {
       alert("Escribe algo");
       return false;
     } else {
-    $("#log").append("<li>" + "<b><font size=+2>" + nick + "</font></b>" + ": " + message + "</li>");
+    $("#log").append("<li>" + "<b><font size=+1>" + nick + "</font></b>" + ": " + message + "</li>");
     $("#message").val('');
 	  $("#message").focus();
+	  $("#log").animate({ scrollTop: $("#log").height() }, 1000);
 		}
 	}
+}
 //Presiónas botón o enter
   $("#buttonSend").on("click", function(e) {
   	sendMessage();

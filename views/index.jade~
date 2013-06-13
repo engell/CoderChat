@@ -19,7 +19,7 @@ html
 					ul#log.span9(style='height: 200px; overflow-y: scroll;')
 					#users.span3(style='height: 150px; overflow-y: scroll;') En linea:
 					#adds.pan3 
-						h4 <center>Adsense!</center>
+						h4 <center>Created By:<br />Dark Engell</center>
 				#fields.row-fluid
 					#contends.span9
 						#alert.span9 
@@ -29,9 +29,10 @@ html
 							button#buttonUser.btn Enviar
 						#send.span9
 							input.span9#message(type='text') 
-							button#buttonSend.btn Enviar
+							button#buttonSend.btn(height: "70") Enviar
 					#buttons.span3
 						button#pastebin.btn Pastebin...
+						br
 						br
 						button#file.btn File...
 

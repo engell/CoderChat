@@ -31,7 +31,7 @@ ul#log {
 }
 
 #contends {
-	margin: 5px;
+	margin: 10px;
 	background-color: #393939;
   padding: 10px;
   border-radius: 10px;	
@@ -42,10 +42,7 @@ ul#log {
 	background-color: #393939;
   padding: 10px;
   border-radius: 10px;	
-	align: center;
-}
-
-#boxes {
+	text-align: center;
 }
 
 #send {
