@@ -32,7 +32,7 @@
       $('#picked').empty();
       for (k in data.docs) {
         picked = data[google.picker.Response.DOCUMENTS][k];
-				$("#log").append("<b><font size=+1 color='yellow'>Host</font></b>" + ": "  + nme +  " ha enviado: ");
+				$("#log").append("<b><font size=+1 color='red'>Host</font></b>" + ": "  + nme +  " ha enviado: ");
         $('<img>', {src:picked.iconUrl}).appendTo("#log");
         $('<a ></a>', {href:picked.url, target:'_blank'}).text(picked.name).appendTo("#log");
 				$("#message").focus();

@@ -73,6 +73,48 @@ $(function() {
   });
 //Termina Función de enviar Mensaje.
 
+  $("#gistForm").on("click", function(e) {
+			$("#createGist").slideToggle();
+			 $("#textarea").focus();
+  });
+
+  $("#cancelarGist").on("click", function(e) {
+			$("#createGist").hide();
+			 $("#message").focus();
+  });
+
+//Gist inicia
+	$('.x-button').click(function(){
+		var log=$('textarea');
+		var data =$('textarea').val();
+		var secim =$('select').val(); 
+			 var key={
+ 
+				    "description": "A Gist!",
+ 
+				    "public": false
+				    }
+ 
+				var deneme={};
+				    deneme['gist.'+secim+'']={"content": ""+data+""};
+				key['files']=deneme;
+ 
+		      $.ajax({
+		        url: 'https://api.github.com/gists',
+		        type: 'POST',
+		        dataType: 'json',
+		        data: JSON.stringify(key),
+		        success: function(data) {
+						finalUrl = ("https://gist.github.com/anonymous/"+data.id);
+						$("#log").append("<b><font size=+1 color='red'>Host</font></b>: "+nick+" ha enviado: "+"<a href='"+finalUrl+"' target='_blank'>"+finalUrl+"</a><br />");
+						$("#createGist").slideToggle();
+						$("#message").focus();
+   					$("#textarea").val('');
+		          }
+		      });
+				 
+	});
+//Gist termina
 });
 
 $(document).ready(function() {

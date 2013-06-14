@@ -7,18 +7,15 @@ html
 		script(type='text/javascript', src='/js/chat.js')
 		script(type='text/javascript', src='/js/bootstrap.js')
 		script(type='text/javascript', src='/js/bootstrap.min.js')
-		script(type='text/javascript', src='/js/orangebox.js')
-		script(type='text/javascript', src='/js/orangebox.min.js')
 		link(rel='stylesheet', href='/css/style.css')
 		link(rel='stylesheet', href='/css/bootstrap.css')
 		link(rel='stylesheet', href='/css/bootstrap.min.css')
 		link(rel='stylesheet', href='/css/bootstrap-responsive.css')
 		link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
-		link(rel='stylesheet', href='/css/orangebox.css')
 		title= chat
 	body
 		#all.container
-			h1 Welcome to ChatNode
+			h2 Welcome to ChatNode
 			#full.row
 				#boxes.row-fluid
 					ul#log.span9(style='height: 200px; overflow-y: scroll;')
@@ -26,6 +23,26 @@ html
 					#adds.pan3 
 						h4 <center>Created By:<br />Dark Engell</center>
 				#fields.row-fluid
+					#createGist.span12
+						section.span9#box
+							textarea#textarea.span12(name='textdata')(style="height: 200px;")
+						section.span3#select
+							br
+							label
+								select.x-list.btn
+									option.btn(value='json') json
+									option.btn(value='html') html
+									option.btn(value='txt') txt
+									option.btn(value='js') javascript
+									option.btn(value='rb') ruby
+									option.btn(value='py') python
+									option.btn(value='css') css
+									option.btn(value='jade') jade
+									option.btn(value='erb') html+erb
+							br
+							button.x-button.btn Enviar Gist
+							br
+							button#cancelarGist.btn Cancelar
 					#contends.span9
 						#alert.span9 
 							h3 Identif&iacute;cate:
@@ -33,10 +50,10 @@ html
 							input#nick.5(type='text')
 							button#buttonUser.btn Enviar
 						#send.span9
-							input.span9#message(type='text') 
+							input.span9#message(type='text')(style="width: 650px;")
 							button#buttonSend.btn Enviar
 					#buttonsArea.span3
-						.btn-group-vertical
-							button#gist.btn(href='http://gist.github.com/engell/5720050?iframe', rel='lightbox[iframe]') Enviar Código...
-							button#gDocsButton.btn Enviar Archivo...
-
+						button#gDocsButton.btn Enviar Archivo...
+						br
+						button#gistForm.btn Enviar Código...
+					

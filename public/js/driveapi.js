@@ -35,6 +35,7 @@
 				$("#log").append("<b><font size=+1 color='red'>Host</font></b>" + ": "  + nme +  " ha enviado: ");
         $('<img>', {src:picked.iconUrl}).appendTo("#log");
         $('<a ></a>', {href:picked.url, target:'_blank'}).text(picked.name).appendTo("#log");
+				$("#log").append("<br />");
 				$("#message").focus();
       }
     }
