@@ -2,14 +2,16 @@ doctype 5
 html
 	head
 		script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
-		script(type='text/javascript', src='/javascripts/chat.js')
-		script(type='text/javascript', src='/javascripts/bootstrap.js')
-		script(type='text/javascript', src='/javascripts/bootstrap.min.js')
-		link(rel='stylesheet', href='/stylesheets/style.css')
-		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
-		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-		link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.css')
-		link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
+		script(type='text/javascript', src='http://www.google.com/jsapi?key=AIzaSyD0u_qbpcRSJ2dhR2oXeydZaCyr2TkacGo')
+		script(type='text/javascript', src='/js/driveapi.js')
+		script(type='text/javascript', src='/js/chat.js')
+		script(type='text/javascript', src='/js/bootstrap.js')
+		script(type='text/javascript', src='/js/bootstrap.min.js')
+		link(rel='stylesheet', href='/css/style.css')
+		link(rel='stylesheet', href='/css/bootstrap.css')
+		link(rel='stylesheet', href='/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/bootstrap-responsive.css')
+		link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
 		title= chat
 	body
 		#all.container
@@ -30,9 +32,8 @@ html
 						#send.span9
 							input.span9#message(type='text') 
 							button#buttonSend.btn Enviar
-					#buttons.span3
-						button#pastebin.btn Pastebin...
-						br
-						br
-						button#file.btn File...
+					#buttonsArea.span3
+						.btn-group-vertical
+							button#gist.btn Enviar Código...
+							button#gDocsButton.btn Enviar Archivo...
 
