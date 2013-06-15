@@ -83,16 +83,23 @@ $(function() {
 			 $("#message").focus();
   });
 
+	
+
 //Gist inicia
 	$('.x-button').click(function(){
 		var log=$('textarea');
-		var data =$('textarea').val();
-		var secim =$('select').val(); 
+		var data=$('textarea').val();
+		var secim=$('select').val(); 
+		var desc=$('#descriptionGit').val();
+		if ($(".checkBox").is(":checked")) {
+			visibility = true;
+		} else {visibility = false;}
+
 			 var key={
  
-				    "description": "A Gist!",
+				    "description": desc,
  
-				    "public": false
+				    "public": visibility
 				    }
  
 				var deneme={};
@@ -106,7 +113,7 @@ $(function() {
 		        data: JSON.stringify(key),
 		        success: function(data) {
 						finalUrl = ("https://gist.github.com/anonymous/"+data.id);
-						$("#log").append("<b><font size=+1 color='red'>Host</font></b>: "+nick+" ha enviado: "+"<a href='"+finalUrl+"' target='_blank'>"+finalUrl+"</a>");
+						$("#log").append("<b><font size=+1 color='red'>Host</font></b>: "+nick+" ha enviado: "+"<a href='"+finalUrl+"' target='_blank'>"+finalUrl+"</a><br />");
 						$("#createGist").slideToggle();
 						$("#message").focus();
    					$("#textarea").val('');
@@ -122,8 +129,10 @@ $(document).ready(function() {
 	$(document).keydown(function(e) {
 		//var order = e.which;
     //console.log(order);
-		if (e.keyCode === 192){console.log("Hello");} 
+		if (e.keyCode === 192){console.log(visibility);} 
 	});
+
+	
 
 });
 

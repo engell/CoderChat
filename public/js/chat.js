@@ -83,16 +83,21 @@ $(function() {
 			 $("#message").focus();
   });
 
+	
+
 //Gist inicia
 	$('.x-button').click(function(){
 		var log=$('textarea');
-		var data =$('textarea').val();
-		var secim =$('select').val(); 
+		var data=$('textarea').val();
+		var secim=$('select').val(); 
+		var desc=$('#descriptionGit').val();
+		if ($(".checkBox").is(":checked")) {visibility = true;} else {visibility = false;}
+
 			 var key={
  
-				    "description": "A Gist!",
+				    "description": desc,
  
-				    "public": false
+				    "public": visibility
 				    }
  
 				var deneme={};
@@ -122,8 +127,10 @@ $(document).ready(function() {
 	$(document).keydown(function(e) {
 		//var order = e.which;
     //console.log(order);
-		if (e.keyCode === 192){console.log("Hello");} 
+		if (e.keyCode === 192){console.log(visibility);} 
 	});
+
+	
 
 });
 

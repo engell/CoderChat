@@ -15,7 +15,7 @@ html
 		title= chat
 	body
 		#all.container
-			h2 Welcome to ChatNode
+			h2 Welcome to a simple chatroom
 			#full.row
 				#boxes.row-fluid
 					ul#log.span9(style='height: 200px; overflow-y: scroll;')
@@ -25,9 +25,16 @@ html
 				#fields.row-fluid
 					#createGist.span12
 						section.span9#box
+							span Descripción:
+							br
+							input#descriptionGit.span12(type="text", value='Un simple Gist', onfocus='if (this.value=="Un simple Gist") this.value="";')
+							br
+							span Código:
+							br
 							textarea#textarea.span12(name='textdata')(style="height: 200px;")
 						section.span3#select
 							br
+							span Lenguaje:
 							label
 								select.x-list.btn
 									option.btn(value='json') json
@@ -39,9 +46,9 @@ html
 									option.btn(value='css') css
 									option.btn(value='jade') jade
 									option.btn(value='erb') html+erb
+							input.checkBox(type='checkbox')Check Público
 							br
 							button.x-button.btn Enviar Gist
-							br
 							button#cancelarGist.btn Cancelar
 					#contends.span9
 						#alert.span9 

@@ -11,7 +11,7 @@ ul#log {
 	list-style: none;
 	-webkit-border-radius: 10px;
   border-radius: 10px;
-	background-color: #393939;
+	background-color: #DCDCDC;
 	margin: 5px;
 }
 
@@ -20,7 +20,7 @@ ul#log {
 	-webkit-border-radius: 10px;
   border-radius: 10px;
 	margin: 5px;
-	background-color: #393939;
+	background-color: #DCDCDC;
 }
 
 #adds {
@@ -32,22 +32,22 @@ ul#log {
 
 #contends {
 	margin: 5px;
-	background-color: #393939;
+	background-color: #DCDCDC;
   padding: 10px;
   border-radius: 10px;	
 }
 
 #createGist {
 	margin: 5px;
-	background-color: #393939;
+	background-color: #DCDCDC;
   padding: 10px;
   border-radius: 10px;	
-	display: none;
+/*	display: none;*/
 }
 
 #buttonsArea {
 	margin: 5px;
-	background-color: #393939;
+	background-color: #DCDCDC;
   padding: 10px;
   border-radius: 10px;	
 	text-align: center;
