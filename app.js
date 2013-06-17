@@ -7,8 +7,7 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , http = require('http')
-  , path = require('path')
-	, gist = require('node-gist');
+  , path = require('path');
 
 var app = express();
 

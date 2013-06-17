@@ -91,9 +91,7 @@ $(function() {
 		var data=$('textarea').val();
 		var secim=$('select').val(); 
 		var desc=$('#descriptionGit').val();
-		if ($(".checkBox").is(":checked")) {
-			visibility = true;
-		} else {visibility = false;}
+		if ($(".checkBox").is(":checked")) {visibility = true;} else {visibility = false;}
 
 			 var key={
  
@@ -127,10 +125,11 @@ $(function() {
 $(document).ready(function() {
 	$("#nick").focus();
 	$(document).keydown(function(e) {
-		//var order = e.which;
-    //console.log(order);
+		var order = e.which;
+    console.log(order);
 		if (e.keyCode === 192){console.log(visibility);} 
 	});
+
 
 	
 

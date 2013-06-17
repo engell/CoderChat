@@ -37,6 +37,7 @@
         $('<a ></a>', {href:picked.url, target:'_blank'}).text(picked.name).appendTo("#log");
 				$("#log").append("<br />");
 				$("#message").focus();
+				$('#log').scrollTop($('#log')[0].scrollHeight);
       }
     }
 

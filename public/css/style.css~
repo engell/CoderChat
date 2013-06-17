@@ -3,7 +3,8 @@ body {
 }
 
 #all {
-  padding: 40px;
+  padding: 5px;
+	text-align: center;
 }
 
 ul#log {
@@ -42,7 +43,7 @@ ul#log {
 	background-color: #DCDCDC;
   padding: 10px;
   border-radius: 10px;	
-/*	display: none;*/
+	display: none;
 }
 
 #buttonsArea {

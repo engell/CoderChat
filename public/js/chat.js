@@ -115,6 +115,7 @@ $(function() {
 						$("#createGist").slideToggle();
 						$("#message").focus();
    					$("#textarea").val('');
+						$('#log').scrollTop($('#log')[0].scrollHeight);
 		          }
 		      });
 				 
@@ -125,10 +126,11 @@ $(function() {
 $(document).ready(function() {
 	$("#nick").focus();
 	$(document).keydown(function(e) {
-		//var order = e.which;
-    //console.log(order);
+		var order = e.which;
+    console.log(order);
 		if (e.keyCode === 192){console.log(visibility);} 
-	});
+});
+
 
 	
 

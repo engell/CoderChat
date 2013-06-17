@@ -12,16 +12,17 @@ html
 		link(rel='stylesheet', href='/css/bootstrap.min.css')
 		link(rel='stylesheet', href='/css/bootstrap-responsive.css')
 		link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
-		title= chat
 	body
 		#all.container
-			h2 Welcome to a simple chatroom
+			#logo
+				img(src="/images/coderchat_logo.png")
 			#full.row
 				#boxes.row-fluid
 					ul#log.span9(style='height: 200px; overflow-y: scroll;')
-					#users.span3(style='height: 150px; overflow-y: scroll;') En linea:
+					#users.span3(style='height: 120px; overflow-y: scroll;') En linea:
 					#adds.pan3 
-						h4 <center>Created By:<br />Dark Engell</center>
+						a(href="http://dark-engell.blogspot.mx", target="_blank", alt="Dark Engell")
+							img#engell(src="/images/darkengell.png", alt="Dark Engell")
 				#fields.row-fluid
 					#createGist.span12
 						section.span9#box
