@@ -1,10 +1,4 @@
 $(function() {
-//Función de token (Para privacidad)
-//console.log(config.password);
-intro = prompt("Clave de acceso:");
-	if (intro != "password") {
-		return false;
-	} else {
 //Declara las variables principales
 	var client = new Faye.Client('http://localhost:3000/faye');
 	window.cli3nt = client;
@@ -117,7 +111,6 @@ intro = prompt("Clave de acceso:");
      		}
 		});
 	});
-}//Cierra else del token
 //Gist termina
 });
 $(document).ready(function() {
