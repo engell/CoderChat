@@ -16,11 +16,8 @@ var server = app.listen(port);
 var bayeux = new faye.NodeAdapter({mount: '/faye', timeout: 45});
 bayeux.attach(server);
 
-var yaml_config = require('node-yaml-config');
-config = yaml_config.load(__dirname + '/views/config.yml');
-//console.log(config.password); 
-
 // all environments
+app.use(express.basicAuth('xenodesystems', 'CapleCap009'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(express.favicon());
