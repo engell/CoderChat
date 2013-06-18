@@ -2,11 +2,11 @@
 
 ## By: [![Dark Engell](https://lh5.googleusercontent.com/cvePDTGCLBJepWjzWbncnvFOhY9HbgxC1cBvUbEwygFpvLBVlp2pFW0dRMnpqbiPdQ "Dark Engell")](http://engell.me) [![endorse](https://api.coderwall.com/engell/endorsecount.png)](https://coderwall.com/engell)
 
-**CoderChat** es una plataforma tipo chat creada por [`Ángel Isaac Pizano`](http://engell.me/) pensada principalmente para el envío de `documentos`, `cógido`, `imágenes` y demás `archivos`.
+**CoderChat** es una plataforma tipo chat creada por [`Ángel Isaac Pizano`](http://engell.me/) pensada principalmente para el envio de `documentos`, `cógido`, `imágenes` y demás `archivos`.
 
-El enfoque para facilitar el envío de distintos documentos `[*.doc, *.png, *.pdf, etc...]` y código de distintos lenguajes de programación, `[*.html, *.rb, *.coffee, etc...]` hace de ésta plataforma un muy buena herramienta para un programador.
+El enfoque para facilitar el envio de distintos documentos `[*.doc, *.png, *.pdf, etc...]` y código de distintos lenguajes de programación, `[*.html, *.rb, *.coffee, etc...]` hace de ésta plataforma una muy buena herramienta para un programador.
 
-Implementa la tecnología de `Google Drive` para la gestión de archivos e integra `Gist` para enviar código de manera simple sin necesidad de salir de la aplicación.
+Implementa la tecnología de `Google Drive` para la gestión de archivos e integra `Gist` para enviar código de manera simple sin necesidad de salir de la misma aplicación.
 
 También contiene un "token" de seguridad **aún en fase beta** para proteger la conversación y que no cualquiera tenga acceso a la misma. 
 
