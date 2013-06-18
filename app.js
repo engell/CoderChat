@@ -8,13 +8,17 @@ var express = require('express')
   , user = require('./routes/user')
   , http = require('http')
   , path = require('path')
-	, faye = require('faye');
+  , faye = require('faye');
 
 var app = express();
 var port = 3000;
 var server = app.listen(port);
 var bayeux = new faye.NodeAdapter({mount: '/faye', timeout: 45});
 bayeux.attach(server);
+
+var yaml_config = require('node-yaml-config');
+var config = yaml_config.load(__dirname + '/views/config.yml');
+//console.log(config.password); 
 
 // all environments
 app.set('views', __dirname + '/views');

@@ -1,11 +1,10 @@
 $(function() {
-//Declara las variables principales
-var token = "password";
-intro = prompt("Introduce el token:");
-	if (intro != token) {
-		console.log(prompt);
+//Función de token (Para privacidad)
+intro = prompt("Clave de acceso:");
+	if (intro != "password") {
 		return false;
 	} else {
+//Declara las variables principales
 	var client = new Faye.Client('http://localhost:3000/faye');
 	window.cli3nt = client;
 	var message, nick;

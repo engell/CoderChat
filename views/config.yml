@@ -1,0 +1,6 @@
+default:
+  password: "Abrete Sesamo"
+test:
+  password: "Abrete Sesamo"
+production:
+  password: "Abrete Sesamo"

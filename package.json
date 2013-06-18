@@ -9,6 +9,7 @@
     "express": "3.2.6",
     "jade": "*",
 		"fs": "*",
-		"faye": "*"
+		"faye": "*",
+    "node-yaml-config": "*"
   }
 }
