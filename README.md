@@ -2,17 +2,17 @@
 
 ## By: [![Dark Engell](https://lh5.googleusercontent.com/cvePDTGCLBJepWjzWbncnvFOhY9HbgxC1cBvUbEwygFpvLBVlp2pFW0dRMnpqbiPdQ "Dark Engell")](http://engell.me) [![endorse](https://api.coderwall.com/engell/endorsecount.png)](https://coderwall.com/engell)
 
-**CoderChat** es una plataforma tipo chat creada por [`Ángel Isaac Pizano`](http://engell.me/) pensada principalmente para el envío de `documentos`, `cógido`, `imagenes` y demas `archivos`.
+**CoderChat** es una plataforma tipo chat creada por [`Ángel Isaac Pizano`](http://engell.me/) pensada principalmente para el envío de `documentos`, `cógido`, `imágenes` y demás `archivos`.
 
-El enfoque para facilitar el envío de distintos dócumentos `[*.doc, *.png, *.pdf, etc...]` y código de distintos lenguajes de programación, `[*.html, *.rb, *.coffee, etc...]` hace de ésta plataforma un muy buena herramienta para un programador.
+El enfoque para facilitar el envío de distintos documentos `[*.doc, *.png, *.pdf, etc...]` y código de distintos lenguajes de programación, `[*.html, *.rb, *.coffee, etc...]` hace de ésta plataforma un muy buena herramienta para un programador.
 
-Implementa la tecnología de `Google Drive` para la gestión de archivos e integra `Gist` para envíar código de manera simple sin necesidad de salir de la aplicación.
+Implementa la tecnología de `Google Drive` para la gestión de archivos e integra `Gist` para enviar código de manera simple sin necesidad de salir de la aplicación.
 
-También contiene un "token" de seguridad **aún en fase beta** para proteger la converzación y que no cualquiera tenga acceso a la misma. 
+También contiene un "token" de seguridad **aún en fase beta** para proteger la conversación y que no cualquiera tenga acceso a la misma. 
 
 Creada con `Node.js`, `jQuery`, y `Jade`; utiliza `Faye` cómo servidor para la interacción entre los distintos clientes logrando una plataforma completamente funcional `sin la necesidad de utilizar una Base de Datos`.
 
-	Click a las imagenes para agrandar.
+	Click a las imágenes para agrandar.
 
 [![Dark Engell](https://lh6.googleusercontent.com/OeMHmtVHRvcNbjQTo9rqKdYe2v63yAsh_Z1g8Lzqkapln8cc2itdKPFgo8kfXfqKjQ=w200 "Dark Engell")](https://lh6.googleusercontent.com/OeMHmtVHRvcNbjQTo9rqKdYe2v63yAsh_Z1g8Lzqkapln8cc2itdKPFgo8kfXfqKjQ)
 [![Dark Engell](https://lh4.googleusercontent.com/W294ADdpkYUtCbe1LX2duoMMBQ4j2S4vNMu-YFEgsua4TI6Epkeno-16y6H1nlw6nA=w200 "Dark Engell")](https://lh4.googleusercontent.com/W294ADdpkYUtCbe1LX2duoMMBQ4j2S4vNMu-YFEgsua4TI6Epkeno-16y6H1nlw6nA)
