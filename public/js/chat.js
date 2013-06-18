@@ -1,5 +1,6 @@
 $(function() {
 //Función de token (Para privacidad)
+//console.log(config.password);
 intro = prompt("Clave de acceso:");
 	if (intro != "password") {
 		return false;

@@ -17,7 +17,7 @@ var bayeux = new faye.NodeAdapter({mount: '/faye', timeout: 45});
 bayeux.attach(server);
 
 var yaml_config = require('node-yaml-config');
-var config = yaml_config.load(__dirname + '/views/config.yml');
+config = yaml_config.load(__dirname + '/views/config.yml');
 //console.log(config.password); 
 
 // all environments
