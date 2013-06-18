@@ -3,33 +3,41 @@ body {
 }
 
 #all {
-  padding: 5px;
+  	padding: 5px;
 }
 
 #logo {
 	text-align: center;
 }
 
-ul#log {
-  padding: 10px;
-	list-style: none;
+#frameChat {
+  	padding: 10px;
 	-webkit-border-radius: 10px;
-  border-radius: 10px;
+  	border-radius: 10px;
 	background-color: #DCDCDC;
 	margin: 5px;
+}
+
+ul#log {
+	list-style: none;
+	display: none;
+}
+
+#frameUsers {
+  	padding: 10px;
+	-webkit-border-radius: 10px;
+  	border-radius: 10px;
+	margin: 5px;
+	background-color: #DCDCDC;
 }
 
 #users {
-  padding: 10px;
-	-webkit-border-radius: 10px;
-  border-radius: 10px;
-	margin: 5px;
-	background-color: #DCDCDC;
+	display: none;
 }
 
 #adds {
-  padding: 10px;
-  border-radius: 10px;
+  	padding: 10px;
+  	border-radius: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
@@ -38,23 +46,23 @@ ul#log {
 #contends {
 	margin: 5px;
 	background-color: #DCDCDC;
-  padding: 10px;
-  border-radius: 10px;	
+  	padding: 10px;
+  	border-radius: 10px;	
 }
 
 #createGist {
 	margin: 5px;
 	background-color: #DCDCDC;
-  padding: 10px;
-  border-radius: 10px;	
+  	padding: 10px;
+  	border-radius: 10px;	
 	display: none;
 }
 
 #buttonsArea {
 	margin: 5px;
 	background-color: #DCDCDC;
-  padding: 10px;
-  border-radius: 10px;	
+  	padding: 10px;
+  	border-radius: 10px;	
 	text-align: center;
 	display: none;
 }

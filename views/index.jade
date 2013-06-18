@@ -1,12 +1,14 @@
-doctype 5
-html
+!!! 5
+html(lang='en-US')
 	head
+		meta(charset='UTF-8')
 		script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
 		script(type='text/javascript', src='http://www.google.com/jsapi?key=AIzaSyD0u_qbpcRSJ2dhR2oXeydZaCyr2TkacGo')
 		script(type='text/javascript', src='/js/driveapi.js')
 		script(type='text/javascript', src='/js/chat.js')
 		script(type='text/javascript', src='/js/bootstrap.js')
 		script(type='text/javascript', src='/js/bootstrap.min.js')
+		script(type='text/javascript', src='/faye.js')
 		link(rel='stylesheet', href='/css/style.css')
 		link(rel='stylesheet', href='/css/bootstrap.css')
 		link(rel='stylesheet', href='/css/bootstrap.min.css')
@@ -18,8 +20,10 @@ html
 				img(src="/images/coderchat_logo.png")
 			#full.row
 				#boxes.row-fluid
-					ul#log.span9(style='height: 200px; overflow-y: scroll;')
-					#users.span3(style='height: 120px; overflow-y: scroll;') En linea:
+					#frameChat.span9(style='height: 210px')
+						ul#log(style='height: 200px; overflow-y: scroll;')
+					#frameUsers.span3(style='height: 120px;')
+						#users(style='height: 100%; overflow-y: scroll;') En linea:
 					#adds.pan3 
 						a(href="http://dark-engell.blogspot.mx", target="_blank", alt="Dark Engell")
 							img#engell(src="/images/darkengell.png", alt="Dark Engell")
@@ -64,4 +68,3 @@ html
 						button#gDocsButton.btn Enviar Archivo...
 						br
 						button#gistForm.btn Enviar Código...
-					
