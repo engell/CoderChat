@@ -20,7 +20,7 @@ Creada con `Node.js`, `jQuery`, y `Jade`; utiliza `Faye` cómo servidor para la 
 [![CoderChat04](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat04_tmb.png "CoderChat.NoDB04")](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat04.png)
 [![CoderChat05](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat05_tmb.png "CoderChat.NoDB05")](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat05.png)
 
-	En éste momento la aplicación está corriendo en [`http://coderchat.herokuapp.com`](http://coderchat.herokuapp.com) por si se quiere probar.
+En éste momento la aplicación está corriendo en [`http://coderchat.herokuapp.com`](http://coderchat.herokuapp.com) por si se quiere probar.
 
 >Para arrancar el servidor simplemente se ejecuta el comando `node app.js` en la carpeta principal.
 
