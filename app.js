@@ -17,7 +17,7 @@ var bayeux = new faye.NodeAdapter({mount: '/faye', timeout: 45});
 bayeux.attach(server);
 
 // all environments
-app.use(express.basicAuth('username', 'password'));
+//app.use(express.basicAuth('username', 'password'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(express.favicon());
