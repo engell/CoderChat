@@ -54,6 +54,15 @@ $(function() {
     } else {
 		var contend = ("<li>" + "<b><font size=+1>" + nick + "</font></b>" + ": " + message + "</li>");
 		client.publish('/message', {text: contend});
+
+		file = 'log.txt'
+		fs.outputFile(file, contend, function(err) {
+			console.log(err); //null
+		fs.readFile(file, 'utf8', function(err, data) {
+			console.log(data); //hello!
+			})
+		})
+
     $("#message").val('');
 	  $("#message").focus();
 		}

@@ -1,6 +1,6 @@
-![CoderChat.NoDB logo](https://lh3.googleusercontent.com/UHImezwFYBWcM5aeYe3S-2KlanY9Mf5ORYY-AIB3UjvoGhor7KBUfPVFy23OqqssBw "CoderChat.NoDB")
+![CoderChat.NoDB logo](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/coderchat_logo.png "CoderChat.NoDB")
 
-## By: [![Dark Engell](https://lh6.googleusercontent.com/nc1XsHzAPyfrmKY25ZZzjvZ0NdfhGrNhNY9mFwDybUiA86qFWXxfnQtC99dlqh-9oA "Dark Engell")](http://engell.me) [![endorse](https://api.coderwall.com/engell/endorsecount.png)](https://coderwall.com/engell)
+## By: [![Dark Engell](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/darkengell.png "Dark Engell")](http://engell.me) [![endorse](https://api.coderwall.com/engell/endorsecount.png)](https://coderwall.com/engell)
 
 **CoderChat** es una plataforma tipo chat creada por [`Ángel Isaac Pizano`](http://engell.me/) pensada principalmente para el envio de `documentos`, `cógido`, `imágenes` y demás `archivos`.
 
@@ -14,11 +14,11 @@ Creada con `Node.js`, `jQuery`, y `Jade`; utiliza `Faye` cómo servidor para la 
 
 	Click a las imágenes para agrandar.
 
-[![Dark Engell](https://lh3.googleusercontent.com/jjCn98ZkH9Qp9rMR5mko5ZbcwrMcgfD9Y7O6DP8zggBMF6qg8Iz52EGM4rlEgkjdxA=w200 "Dark Engell")](https://lh3.googleusercontent.com/jjCn98ZkH9Qp9rMR5mko5ZbcwrMcgfD9Y7O6DP8zggBMF6qg8Iz52EGM4rlEgkjdxA)
-[![Dark Engell](https://lh3.googleusercontent.com/jjCn98ZkH9Qp9rMR5mko5ZbcwrMcgfD9Y7O6DP8zggBMF6qg8Iz52EGM4rlEgkjdxA=w200 "Dark Engell")](https://lh3.googleusercontent.com/jjCn98ZkH9Qp9rMR5mko5ZbcwrMcgfD9Y7O6DP8zggBMF6qg8Iz52EGM4rlEgkjdxA)
-[![Dark Engell](https://lh6.googleusercontent.com/qM7AUdACQ31eui0vo0LlRg8jjhmxxLZK_P9NHEnJiG6NMthmKo6jc_ESLZgUBb1vag=w200 "Dark Engell")](https://lh6.googleusercontent.com/qM7AUdACQ31eui0vo0LlRg8jjhmxxLZK_P9NHEnJiG6NMthmKo6jc_ESLZgUBb1vag)
-[![Dark Engell](https://lh4.googleusercontent.com/zuic6DlcoKKGvwz8YKRMoyWrMomI1T0KZVsuJYcXGHHHRFExqrLHuI433nkJbSqbXA=w200 "Dark Engell")](https://lh4.googleusercontent.com/zuic6DlcoKKGvwz8YKRMoyWrMomI1T0KZVsuJYcXGHHHRFExqrLHuI433nkJbSqbXA)
-[![Dark Engell](https://lh5.googleusercontent.com/egIz2XamkmTuqinbDViE5TynBHchceZs_hNA6QCeQZurmjWDwrcqH7di96HXVEBscA=w200 "Dark Engell")](https://lh5.googleusercontent.com/egIz2XamkmTuqinbDViE5TynBHchceZs_hNA6QCeQZurmjWDwrcqH7di96HXVEBscA)
+[![CoderChat01](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat01_tmb.png "CoderChat.NoDB01")](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat01.png)
+[![CoderChat02](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat02_tmb.png "CoderChat.NoDB02")](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat02.png)
+[![CoderChat03](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat03_tmb.png "CoderChat.NoDB03")](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat03.png)
+[![CoderChat04](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat04_tmb.png "CoderChat.NoDB04")](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat04.png)
+[![CoderChat05](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat05_tmb.png "CoderChat.NoDB05")](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat05.png)
 
 >Para arrancar el servidor simplemente se ejecuta el comando `node app.js` en la carpeta principal.
 
