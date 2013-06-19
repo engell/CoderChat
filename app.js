@@ -6,13 +6,11 @@
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
-  , http = require('http')
   , path = require('path')
   , faye = require('faye');
 
 var port = process.env.PORT || 5000;
 var app = express();
-//var port = 3000;
 var server = app.listen(port);
 var bayeux = new faye.NodeAdapter({mount: '/faye', timeout: 45});
 bayeux.attach(server);

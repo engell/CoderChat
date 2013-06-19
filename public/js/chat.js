@@ -1,6 +1,6 @@
 $(function() {
 //Declara las variables principales
-	var client = new Faye.Client('http://localhost:3000/faye');
+	var client = new Faye.Client('http://localhost:5000/faye');
 	window.cli3nt = client;
 	var message, nick;
 	message = void 0;
