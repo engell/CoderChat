@@ -1,4 +1,4 @@
-![CoderChat.NoDB logo](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/coderchat_logo.png "CoderChat.NoDB")
+[![CoderChat.NoDB logo](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/coderchat_logo.png "CoderChat.NoDB")](http://coderchat.herokuapp.com)
 
 ## By: [![Dark Engell](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/darkengell.png "Dark Engell")](http://engell.me) [![endorse](https://api.coderwall.com/engell/endorsecount.png)](https://coderwall.com/engell)
 
@@ -20,9 +20,11 @@ Creada con `Node.js`, `jQuery`, y `Jade`; utiliza `Faye` cómo servidor para la 
 [![CoderChat04](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat04_tmb.png "CoderChat.NoDB04")](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat04.png)
 [![CoderChat05](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat05_tmb.png "CoderChat.NoDB05")](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/CoderChat05.png)
 
+	En éste momento la aplicación está corriendo en [`http://coderchat.herokuapp.com`](http://coderchat.herokuapp.com) por si se quiere probar.
+
 >Para arrancar el servidor simplemente se ejecuta el comando `node app.js` en la carpeta principal.
 
->Al abrir la página por primera vez pide usuario y contraseña gracias a Express Basic Authentication los cuales son `username` y `password` respectivamente.
+>Si se activa la linea 19 de `app.js` al abrir la página por primera vez pide usuario y contraseña gracias a Express Basic Authentication los cuales son `username` y `password` respectivamente.
 
 Basado en:
 [`Fayechat`](https://github.com/Jmlevick/fayechat)

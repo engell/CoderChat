@@ -18,7 +18,7 @@
         .addView(google.picker.ViewId.IMAGE_SEARCH)
         .addView(new google.picker.DocsUploadView())
         .enableFeature(google.picker.Feature.MULTISELECT_ENABLED)
-        .setAuthUser("xenodesystems.com")
+        .setAuthUser()
         .setCallback(onPicked)
         .build().setVisible(true);
     }

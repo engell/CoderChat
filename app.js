@@ -19,7 +19,7 @@ bayeux.attach(server);
 //app.use(express.basicAuth('username', 'password'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-app.use(express.favicon());
+app.use(express.favicon(__dirname + '/public/favicon.ico'));
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
@@ -37,4 +37,4 @@ app.get('/users', user.list);
 //http.createServer(app).listen(app.get(port), function(){
 //  console.log('Express server listening on port ' + port);
 //});
-console.log('Funcionando en puerto: ' + port);
+console.log('Corriendo correctamente en el puerto: ' + port);
