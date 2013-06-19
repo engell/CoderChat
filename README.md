@@ -1,6 +1,6 @@
-![CoderChat.NoDB logo](https://lh6.googleusercontent.com/mginAmt-L6DkQST-akQ3ogv6TbC2LBGnPNjdlFaJaTWgTshZ2XcBecDEKoK7tuq70Q "CoderChat.NoDB")
+![CoderChat.NoDB logo](https://lh3.googleusercontent.com/UHImezwFYBWcM5aeYe3S-2KlanY9Mf5ORYY-AIB3UjvoGhor7KBUfPVFy23OqqssBw "CoderChat.NoDB")
 
-## By: [![Dark Engell](https://lh5.googleusercontent.com/cvePDTGCLBJepWjzWbncnvFOhY9HbgxC1cBvUbEwygFpvLBVlp2pFW0dRMnpqbiPdQ "Dark Engell")](http://engell.me) [![endorse](https://api.coderwall.com/engell/endorsecount.png)](https://coderwall.com/engell)
+## By: [![Dark Engell](https://lh6.googleusercontent.com/nc1XsHzAPyfrmKY25ZZzjvZ0NdfhGrNhNY9mFwDybUiA86qFWXxfnQtC99dlqh-9oA "Dark Engell")](http://engell.me) [![endorse](https://api.coderwall.com/engell/endorsecount.png)](https://coderwall.com/engell)
 
 **CoderChat** es una plataforma tipo chat creada por [`Ángel Isaac Pizano`](http://engell.me/) pensada principalmente para el envio de `documentos`, `cógido`, `imágenes` y demás `archivos`.
 
@@ -8,21 +8,21 @@ El enfoque para facilitar el envio de distintos documentos `[*.doc, *.png, *.pdf
 
 Implementa la tecnología de `Google Drive` para la gestión de archivos e integra `Gist` para enviar código de manera simple sin necesidad de salir de la misma aplicación.
 
-También contiene un "token" de seguridad **aún en fase beta** para proteger la conversación y que no cualquiera tenga acceso a la misma. 
+También integra `Express Basic Authentication` para proteger la conversación y que no cualquiera tenga acceso a la misma. 
 
 Creada con `Node.js`, `jQuery`, y `Jade`; utiliza `Faye` cómo servidor para la interacción entre los distintos clientes logrando una plataforma completamente funcional `sin la necesidad de utilizar una Base de Datos`.
 
 	Click a las imágenes para agrandar.
 
-[![Dark Engell](https://lh6.googleusercontent.com/OeMHmtVHRvcNbjQTo9rqKdYe2v63yAsh_Z1g8Lzqkapln8cc2itdKPFgo8kfXfqKjQ=w200 "Dark Engell")](https://lh6.googleusercontent.com/OeMHmtVHRvcNbjQTo9rqKdYe2v63yAsh_Z1g8Lzqkapln8cc2itdKPFgo8kfXfqKjQ)
-[![Dark Engell](https://lh4.googleusercontent.com/W294ADdpkYUtCbe1LX2duoMMBQ4j2S4vNMu-YFEgsua4TI6Epkeno-16y6H1nlw6nA=w200 "Dark Engell")](https://lh4.googleusercontent.com/W294ADdpkYUtCbe1LX2duoMMBQ4j2S4vNMu-YFEgsua4TI6Epkeno-16y6H1nlw6nA)
-[![Dark Engell](https://lh4.googleusercontent.com/obsu7YUlKX6-8W6JDuKXL6F85PwUdWn0bpr9pGLx9_cWBxajp7Yo0HI4MveWtTinfw=w200 "Dark Engell")](https://lh4.googleusercontent.com/obsu7YUlKX6-8W6JDuKXL6F85PwUdWn0bpr9pGLx9_cWBxajp7Yo0HI4MveWtTinfw)
-[![Dark Engell](https://lh3.googleusercontent.com/6URnXOJI8bcRYjxoUdHwfeV2-Mc9GkXB5QU39tqDM3LvBcWksLAPEKhuPkyOK0ECWw=w200 "Dark Engell")](https://lh3.googleusercontent.com/6URnXOJI8bcRYjxoUdHwfeV2-Mc9GkXB5QU39tqDM3LvBcWksLAPEKhuPkyOK0ECWw)
-[![Dark Engell](https://lh4.googleusercontent.com/hvwlyX9q9em6mTMi0jvXUH6lmlqSl0seMGZFVKgYGZQqur5LWU1Me6HgW-UJH6CWzQ=w200 "Dark Engell")](https://lh4.googleusercontent.com/hvwlyX9q9em6mTMi0jvXUH6lmlqSl0seMGZFVKgYGZQqur5LWU1Me6HgW-UJH6CWzQ)
+[![Dark Engell](https://lh3.googleusercontent.com/jjCn98ZkH9Qp9rMR5mko5ZbcwrMcgfD9Y7O6DP8zggBMF6qg8Iz52EGM4rlEgkjdxA=w200 "Dark Engell")](https://lh3.googleusercontent.com/jjCn98ZkH9Qp9rMR5mko5ZbcwrMcgfD9Y7O6DP8zggBMF6qg8Iz52EGM4rlEgkjdxA)
+[![Dark Engell](https://lh3.googleusercontent.com/jjCn98ZkH9Qp9rMR5mko5ZbcwrMcgfD9Y7O6DP8zggBMF6qg8Iz52EGM4rlEgkjdxA=w200 "Dark Engell")](https://lh3.googleusercontent.com/jjCn98ZkH9Qp9rMR5mko5ZbcwrMcgfD9Y7O6DP8zggBMF6qg8Iz52EGM4rlEgkjdxA)
+[![Dark Engell](https://lh6.googleusercontent.com/qM7AUdACQ31eui0vo0LlRg8jjhmxxLZK_P9NHEnJiG6NMthmKo6jc_ESLZgUBb1vag=w200 "Dark Engell")](https://lh6.googleusercontent.com/qM7AUdACQ31eui0vo0LlRg8jjhmxxLZK_P9NHEnJiG6NMthmKo6jc_ESLZgUBb1vag)
+[![Dark Engell](https://lh4.googleusercontent.com/zuic6DlcoKKGvwz8YKRMoyWrMomI1T0KZVsuJYcXGHHHRFExqrLHuI433nkJbSqbXA=w200 "Dark Engell")](https://lh4.googleusercontent.com/zuic6DlcoKKGvwz8YKRMoyWrMomI1T0KZVsuJYcXGHHHRFExqrLHuI433nkJbSqbXA)
+[![Dark Engell](https://lh5.googleusercontent.com/egIz2XamkmTuqinbDViE5TynBHchceZs_hNA6QCeQZurmjWDwrcqH7di96HXVEBscA=w200 "Dark Engell")](https://lh5.googleusercontent.com/egIz2XamkmTuqinbDViE5TynBHchceZs_hNA6QCeQZurmjWDwrcqH7di96HXVEBscA)
 
 >Para arrancar el servidor simplemente se ejecuta el comando `node app.js` en la carpeta principal.
 
->El "token" por defecto es `password` y lo pide antes de cargar la página.
+>Al abrir la página por primera vez pide usuario y contraseña gracias a Express Basic Authentication los cuales son `username` y `password` respectivamente.
 
 Basado en:
 [`Fayechat`](https://github.com/Jmlevick/fayechat)
