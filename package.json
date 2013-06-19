@@ -1,5 +1,5 @@
 {
-  "name": "CoderChat",
+  "name": "CoderChat.NoDB",
   "version": "0.9.9",
   "private": true,
   "scripts": {
@@ -8,8 +8,7 @@
   "dependencies": {
     "express": "3.2.6",
     "jade": "*",
-    "fs": "*",
-    "faye": "*",
+    "faye": "*"
   },
   "engines": {
     "node": "*",
