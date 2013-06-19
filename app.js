@@ -10,8 +10,9 @@ var express = require('express')
   , path = require('path')
   , faye = require('faye');
 
+var port = process.env.PORT || 5000;
 var app = express();
-var port = 80;
+//var port = 3000;
 var server = app.listen(port);
 var bayeux = new faye.NodeAdapter({mount: '/faye', timeout: 45});
 bayeux.attach(server);
@@ -38,3 +39,4 @@ app.get('/users', user.list);
 //http.createServer(app).listen(app.get(port), function(){
 //  console.log('Express server listening on port ' + port);
 //});
+console.log('Funcionando en puerto: ' + port);
