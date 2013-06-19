@@ -11,7 +11,7 @@ var express = require('express')
   , faye = require('faye');
 
 var app = express();
-var port = 80;
+var port = 8080;
 var server = app.listen(port);
 var bayeux = new faye.NodeAdapter({mount: '/faye', timeout: 45});
 bayeux.attach(server);
