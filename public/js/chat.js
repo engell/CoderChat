@@ -1,19 +1,19 @@
 $(function() {
 //Declara las variables principales
-	var client = new Faye.Client('http://coderchat.herokuapp.com/faye');
+	var client = new Faye.Client('http://localhost:3000/faye');
 	window.cli3nt = client;
 	var message, nick;
 	message = void 0;
 	nick = void 0;
 	message = null;
 	nick = null;
-	if (nick === null) {$("#alert").css({color: "red"});}
+	var myDate = new Date();
+	var displayDate = (myDate.getDate()+"'"+(myDate.getMonth()+1));
 //Inicia función de enviar Nick	
 	var sendNick = function() {
 		nick = $("#nick").val();		
 		window.nme = $("#nick").val();
     if (nick.indexOf("<") !== -1) {
-      alert("No HTML please");
       return false;
 		}
    	if (nick === "") {
@@ -21,20 +21,31 @@ $(function() {
 			return false;
    	} else {
 			client.publish('/nick', {text: nick});
-			$("#buttonUser").hide();
 			$("#alert").hide();
 			$("#nick").on("focus", function() {$(this).blur();});
-			$("#log").slideToggle();
-			$("#send").slideToggle();
+			$("#me").val(nick);
+			$("#log").show();
+			$("#send").show();
+			$("#users").show();
+			$("#buttonsArea").show();
+			$("#userField").show();
+			$("#inputName").hide();
+			$("#userField").append("<span class='badge badge-inverse'><img id='mono' src='images/user_logo.png'> <span id='theUser'>"+nick+":</span></span>");
+			var d = new Date();
+			var contend = ("<li><span id='time'>"+displayDate+"~"+d.getHours()+":"+d.getMinutes()+"</span> <b><span id='outHost'>Host:</span></b> <b><span id='outNick'>"+nick+"</span></b> se ha conectado.</li>");
+			client.publish('/message', {text: contend});
 			$("#message").focus();
-			$("#users").slideToggle();
-			$("#buttonsArea").slideToggle();
+			$("#date").val(displayDate+"~"+d.getHours()+":"+d.getMinutes());
+			$("#submit").val("Se ha conectado.");
+			$("#toGoogle").click();
+			return false;
 		}
 	}
 //Enviar nick con botón o enter
   $("#buttonUser").on("click", function(e) {sendNick();});
   $("#nick").on("keypress", function(e) {
-  	if(e.keyCode==13){sendNick();}
+  	if(e.keyCode==13){sendNick();
+  	return false;}
   });
 //Escuchar Usuarios
 	client.subscribe('/nick', function(user) {
@@ -45,20 +56,23 @@ $(function() {
 	var sendMessage = function() {
 		message = $("#message").val();
     if (message.indexOf("<") !== -1) {
-      alert("No HTML please");
       return false;
     }
     if (message === "") {
-      alert("Escribe algo");
+      //alert("Escribe algo");
       return false;
     } else {
-		var contend = ("<li>" + "<b><font size=+1>" + nick + "</font></b>" + ": " + message + "</li>");
+    	var d = new Date();
+		var contend = ("<li><span id='time'>"+d.getHours()+":"+d.getMinutes()+"</span><b><font size=+1> " + nick + "</font></b>" + ": " + message + "</li>");
 		client.publish('/message', {text: contend});
 	    $("#message").val('');
 		$("#message").focus();
+		$("#submit").val(message);
+        $("#date").val(d.getHours()+":"+d.getMinutes()+":"+d.getSeconds());
+		$("#toGoogle").click();
 		}
 	}
-//Presiónas botón o enter
+//Presiónas botón o enter (Al enviar mensaje)
   $("#buttonSend").on("click", function(e) {
   	sendMessage();
   });
@@ -72,14 +86,21 @@ $(function() {
     $("#log").append(message.text);
 		$('#log').scrollTop($('#log')[0].scrollHeight);
 	});
+
 //Botones de Gist
   $("#gistForm").on("click", function(e) {
 			$("#createGist").slideToggle();
-			 $("#textarea").focus();
+			$("#buttonsArea").slideToggle();
+			$("#send").slideToggle();
+			$("#textarea").focus();
   });
   $("#cancelarGist").on("click", function(e) {
 			$("#createGist").hide();
-			 $("#message").focus();
+			$("#buttonsArea").slideToggle();
+			$("#send").slideToggle();
+			$("#message").focus();
+			$("#textarea").val("");
+			$("descriptionGit").val("Un simple Gist");
   });
 //Gist inicia
 	$('.x-button').click(function(){
@@ -103,11 +124,17 @@ $(function() {
 			success: function(data) {
 			finalUrl = ("https://gist.github.com/anonymous/"+data.id)
 			gistDesc = $("#descriptionGit").val();
-			var contend = ("<b><font size=+1 color='red'>Host</font></b>: <font color='blue'>"+nick+"</font> ha enviado un Gist: <a href='"+finalUrl+"' target='_blank'> <img src='images/gist_logo.png'> "+gistDesc+"</a><br />");
+	    	var d = new Date();
+			var contend = ("<li><span id='time'>"+d.getHours()+":"+d.getMinutes()+"</span> <b><span id='outHost'>Host:</span></b> <b><span id='outNick'>"+nick+"</span></b> ha enviado un Gist: <a href='"+finalUrl+"' target='_blank'> <img src='images/gist_logo.png'> "+gistDesc+"</a></li>");
 			client.publish('/message', {text: contend});
 			$("#createGist").slideToggle();
 			$("#message").focus();
 			$("#textarea").val('');
+			$("#date").val(d.getHours()+":"+d.getMinutes()+":"+d.getSeconds());
+			$("#submit").val(gistDesc+": "+finalUrl);
+			$("#toGoogle").click();
+			$("#buttonsArea").slideToggle();
+			$("#send").slideToggle();
      		}
 		});
 	});
@@ -121,3 +148,4 @@ $(document).ready(function() {
 		if (e.keyCode === 192){console.log("Hi, Engell greets you ;)");} 
 	});
 });
+

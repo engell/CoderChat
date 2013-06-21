@@ -9,7 +9,7 @@ var express = require('express')
   , path = require('path')
   , faye = require('faye');
 
-var port = process.env.PORT || 5000;
+var port = 3000;
 var app = express();
 var server = app.listen(port);
 var bayeux = new faye.NodeAdapter({mount: '/faye', timeout: 45});

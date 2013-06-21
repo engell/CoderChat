@@ -6,69 +6,91 @@ html(lang='en-US')
 		script(type='text/javascript', src='http://www.google.com/jsapi?key=AIzaSyD0u_qbpcRSJ2dhR2oXeydZaCyr2TkacGo')
 		script(type='text/javascript', src='/js/driveapi.js')
 		script(type='text/javascript', src='/js/chat.js')
-		script(type='text/javascript', src='/js/bootstrap.js')
 		script(type='text/javascript', src='/js/bootstrap.min.js')
 		script(type='text/javascript', src='/faye.js')
-		link(rel='stylesheet', href='/css/style.css')
 		link(rel='stylesheet', href='/css/bootstrap.css')
-		link(rel='stylesheet', href='/css/bootstrap.min.css')
-		link(rel='stylesheet', href='/css/bootstrap-responsive.css')
 		link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+		link(rel='stylesheet', href='/css/style.css')
+		link(href='http://fonts.googleapis.com/css?family=Ubuntu', rel='stylesheet', type='text/css')
 		//if lt IE 9
 		script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
 		//
 		link(rel='shortcut icon', href='favicon.ico')
 	body
 		#all.container
+			a(href='https://github.com/engell/CoderChat', target='_blank')
+				img(style='position: absolute; top: 0; right: 0; border: 0;', src='https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png', alt='Fork me on GitHub')
 			#logo
 				img(src="/images/coderchat_logo.png")
+				br
+				br
+				#alert
+					.alert.alert-error
+						strong Identif&iacute;cate.
 			#full.row
-				#boxes.row-fluid
-					#frameChat.span9(style='height: 210px')
-						ul#log(style='height: 200px; overflow-y: scroll;')
-					#frameUsers.span3(style='height: 120px;')
+				#contends.span9
+					#boxes(style='position:relative;')
+						#frameChat(style='height: 210px')
+							ul#log(style='height: 200px; overflow-y: scroll;')
+						#inputName.span5
+							span Nombre:
+							br
+							br
+							.input-append
+								input#nick.input-medium(type='text')
+								button#buttonUser.btn.btn-info(type='button') Enviar
+						#send.span5
+							#userField
+							br
+							.input-append
+								input#message.input-large(type='text')
+								button#buttonSend.btn.btn-info(type='button') Enviar
+							form#googleForm(method='post', action='Introduce aquí tu macro', name='theForm', target='hidden_iframe')
+								input#me(name='username')
+								input#submit(name='message')
+								input#date(name='date')
+								button#toGoogle x
+								#fields
+
+
+				iframe#hidden_iframe(name='hidden_iframe', style='display: none;')
+				#right.span3
+					#frameUsers(style='height: 120px;')
 						#users(style='height: 100%; overflow-y: scroll;') En linea:
-					#adds.pan3 
+					#adds
 						a(href="http://dark-engell.blogspot.mx", target="_blank", alt="Dark Engell")
 							img#engell(src="/images/darkengell.png", alt="Dark Engell")
-				#fields.row-fluid
-					#createGist.span12
-						section.span9#box
-							span Descripción:
-							br
-							input#descriptionGit.span12(type="text", value='Un simple Gist', onfocus='if (this.value=="Un simple Gist") this.value="";')
-							br
-							span Código:
-							br
-							textarea#textarea.span12(name='textdata')(style="height: 200px;")
-						section.span3#select
-							br
-							span Lenguaje:
-							label
-								select.x-list.btn
-									option.btn(value='json') json
-									option.btn(value='html') html
-									option.btn(value='txt') txt
-									option.btn(value='js') javascript
-									option.btn(value='rb') ruby
-									option.btn(value='py') python
-									option.btn(value='css') css
-									option.btn(value='jade') jade
-									option.btn(value='erb') html+erb
-							input.checkBox#checkBox(type='checkbox')Check Público
-							br
-							button.x-button.btn Enviar Gist
-							button#cancelarGist.btn Cancelar
-					#contends.span9
-						#alert.span9 
-							h3 Identif&iacute;cate:
-						#userField.span9
-							input#nick.5(type='text')
-							button#buttonUser.btn Enviar
-						#send.span9
-							input.span9#message(type='text')(style="width: 650px;")
-							button#buttonSend.btn Enviar
-					#buttonsArea.span3
-						button#gDocsButton.btn Enviar Archivo...
+					#buttonsArea
+						button#gDocsButton.btn <img src="images/gdrive_logo.png"> Enviar Archivo...
 						br
-						button#gistForm.btn Enviar Código...
+						button#gistForm.btn <img src="images/gist_logo.png"> Enviar Código...
+
+
+			#createGist
+				section#box
+					span Descripción:
+					br
+					input#descriptionGit(type="text", value='Un simple Gist', onfocus='if (this.value=="Un simple Gist") this.value="";')
+					br
+					span Código:
+					br
+					textarea#textarea(name='textdata')(style="height: 200px; width:650px;")
+				section#select
+					br
+					p Lenguaje:
+					label
+						select.x-list.btn
+							option.btn(value='json') json
+							option.btn(value='html') html
+							option.btn(value='txt') txt
+							option.btn(value='js') javascript
+							option.btn(value='coffee') coffeescript
+							option.btn(value='rb') ruby
+							option.btn(value='py') python
+							option.btn(value='css') css
+							option.btn(value='jade') jade
+							option.btn(value='erb') html+erb
+					input.checkBox#checkBox(type='checkbox')Check Público
+					br
+					button.x-button.btn Enviar Gist
+					button#cancelarGist.btn Cancelar
