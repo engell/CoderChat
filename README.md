@@ -1,10 +1,10 @@
-[![CoderChat.NoDB logo](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/coderchat_logo.png "CoderChat.NoDB")](http://coderchat.herokuapp.com)
+[![CoderChat.NoDB logo](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/CoderChat/coderchat_logo.png "CoderChat.NoDB")](http://coderchat.engell.me)
 
 ## By: [![Dark Engell](https://dl.dropboxusercontent.com/u/7563463/Imagenes/online/darkengell.png "Dark Engell")](http://engell.me) [![endorse](https://api.coderwall.com/engell/endorsecount.png)](https://coderwall.com/engell)
 
 **CoderChat** es una plataforma tipo chat creada por [`Ángel Isaac Pizano`](http://engell.me/) pensada principalmente para el envio de `documentos`, `cógido`, `imágenes` y demás `archivos`.
 
-En éste momento se encuentra en linea una versión de ésta aplicación en [http://coderchat.herokuapp.com](http://coderchat.herokuapp.com) para prueba en vivo. Así mismo el registro de toda la actividad desde el lanzamiento de la aplicación se encuentra en [éste documento](https://docs.google.com/spreadsheet/ccc?key=0AvNgqRc0XAtodDhkNGk0b280UU1sZVlFdEhscF9hQ2c#gid=1)
+En éste momento se encuentra en linea una versión de ésta aplicación en [http://coderchat.engell.me](http://coderchat.engell.me) para prueba en vivo. Así mismo el registro de toda la actividad desde el lanzamiento de la aplicación se encuentra en [éste documento](https://docs.google.com/spreadsheet/ccc?key=0AvNgqRc0XAtodDhkNGk0b280UU1sZVlFdEhscF9hQ2c#gid=1)
 
 El enfoque para facilitar el envio de distintos documentos `[*.doc, *.png, *.pdf, etc...]` y código de distintos lenguajes de programación, `[*.html, *.rb, *.coffee, etc...]` hace de ésta plataforma una muy buena herramienta para un programador.
 
@@ -28,9 +28,9 @@ Para solucionar el "problema" de la persistencia de datos se implementó un scri
 >Para activar la persistencia de datos (el registro en un documento alojado en GoogleDrive) se debe crear un macro de Google Apps Script e introducirse la URL del mismo en el "action" del form que se encuentra en el documento index.jade
 
 Basado en:
-[`Fayechat`](https://github.com/Jmlevick/fayechat)
-[`Google Drive Picker`](https://gist.github.com/Jmlevick/5781122) y
-[`POST a new Gist with Javascript`](https://gist.github.com/Jmlevick/5781079)
+[`Fayechat`](https://github.com/Jmlevick/fayechat) 
+[`Google Drive Picker`](https://gist.github.com/Jmlevick/5781122) 
+[`POST a new Gist with Javascript`](https://gist.github.com/Jmlevick/5781079) y 
 [`Google Spreadsheet`](https://gist.github.com/Jmlevick/5820002)
 
 ## Licencia

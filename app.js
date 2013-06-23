@@ -31,6 +31,15 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+//publish [clientId, channel, data]
+bayeux.bind('unsubscribe', function(clientId, client) {
+client = bayeux.getClient();
+token = ("7g25a9gr1qt");
+      client.publish("/report", {
+        text: token
+      });
+});
+
 app.get('/', routes.index);
 app.get('/users', user.list);
 

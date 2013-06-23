@@ -84,9 +84,8 @@ ul#log {
     margin: 0px;
 }
 
-#users, #googleForm, #userField, #send, #buttonsArea {
+#users, #googleForm, #userField, #send, #buttonsArea, #nickAlert {
 	display: none;
-	z-index: -200;
 }
 
 #adds {

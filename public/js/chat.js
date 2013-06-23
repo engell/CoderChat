@@ -15,11 +15,16 @@ $(function() {
 		window.nme = $("#nick").val();
     if (nick.indexOf("<") !== -1) {
       return false;
-		}
-   	if (nick === "") {
-			alert("Ingresa nombre de usuario");
-			return false;
-   	} else {
+	}
+	else if ($('#'+nick).length) {
+		$("#nickAlert").slideToggle();
+		return false;
+	}
+   	else if (nick === "") {
+		alert("Ingresa nombre de usuario");
+		return false;
+   	} 
+   	else {
 			client.publish('/nick', {text: nick});
 			$("#alert").hide();
 			$("#nick").on("focus", function() {$(this).blur();});
@@ -49,8 +54,16 @@ $(function() {
   });
 //Escuchar Usuarios
 	client.subscribe('/nick', function(user) {
-		$("#users").append("<li>" + user.text + "</li>");
-		$("#users").scrollTop($('#users')[0].scrollHeight);
+		if (user.text === null) {
+				return false;
+		} 
+		if ($('#'+user.text).length) {
+				return false;
+		}
+		else {
+				$("#users").append("<li class='users' id="+user.text+">" + user.text + "</li>");
+				$("#users").scrollTop($('#users')[0].scrollHeight);
+		}
 	});
 //Inicia Función de enviar Mensaje.
 	var sendMessage = function() {
@@ -138,14 +151,40 @@ $(function() {
      		}
 		});
 	});
-//Gist termina
+//Buscar usuarios ya conectados y escuchar desconexión
+	client.subscribe('/report', function(comeIn) {
+		if (comeIn.text="meNew") {
+			client.publish('/nick', {text: nick});
+		} 
+		if (comeIn.text="7g25a9gr1qt") {
+			$(".users").remove();
+			client.publish('/meHer', {text: nick});
+		}
+	});
+//Escuchar cuando el servidor nota una desconección para volver a crear la lista de conectados.
+	client.subscribe('/meHer', function(ping) {
+		client.subscribe('/nick', function(user) {
+			if (user.text === null) {
+					return false;
+			} 
+			if ($('#'+user.text).length) {
+					return false;
+			}
+			else {
+				$("#users").append("<li class='users' id="+user.text+">" + user.text + "</li>");
+				$("#users").scrollTop($('#users')[0].scrollHeight);
+			}
+		});
+	});
 });
 $(document).ready(function() {
 	$("#nick").focus();
+	//Pedir reporte de los otros clientes
+	cli3nt.publish('/report', {text: "meNew"});
 	$(document).keydown(function(e) {
-		//var order = e.which;
+	//var order = e.which;
     //console.log(order);
-		if (e.keyCode === 192){console.log("Hi, Engell greets you ;)");} 
+	if (e.keyCode === 192){console.log("Hi, Engell greets you ;)");} 
 	});
 });
 

@@ -35,7 +35,10 @@ html(lang='en-US')
 						#inputName.span5
 							span Nombre:
 							br
-							br
+							#nickAlert(style="text-align: center")
+								br
+								.alert.alert-error
+									strong Nombre ya utilizado.
 							.input-append
 								input#nick.input-medium(type='text')
 								button#buttonUser.btn.btn-info(type='button') Enviar
@@ -45,7 +48,7 @@ html(lang='en-US')
 							.input-append
 								input#message.input-large(type='text')
 								button#buttonSend.btn.btn-info(type='button') Enviar
-							form#googleForm(method='post', action='Introduce aquí tu macro', name='theForm', target='hidden_iframe')
+							form#googleForm(method='post', action='Intoduce aquí tu Macro', name='theForm', target='hidden_iframe')
 								input#me(name='username')
 								input#submit(name='message')
 								input#date(name='date')
@@ -58,7 +61,7 @@ html(lang='en-US')
 					#frameUsers(style='height: 120px;')
 						#users(style='height: 100%; overflow-y: scroll;') En linea:
 					#adds
-						a(href="http://dark-engell.blogspot.mx", target="_blank", alt="Dark Engell")
+						a(href="http://engell.me", target="_blank", alt="Dark Engell")
 							img#engell(src="/images/darkengell.png", alt="Dark Engell")
 					#buttonsArea
 						button#gDocsButton.btn <img src="images/gdrive_logo.png"> Enviar Archivo...
